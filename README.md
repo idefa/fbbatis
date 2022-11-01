@@ -13,6 +13,23 @@ fbbatis也提供两种对应的操作，模拟关系型的Table和非关系型�
 * DataTable类对应Table的CRUD接口，当选择Table类型时候，key就是table的名称，支持增删改查。
 * DataSet类对应KVTtable的get/set接口，当选择KVTable的时候，模拟非关系型数据库操作
 
+### sdk配置说明
+```yaml
+server:
+  servlet:
+    context-path: /api/bcos
+  port: 8023
+
+sdk:
+  corePoolSize: 50
+  maxPoolSize: 100
+  queueCapacity: 100
+  ip: 127.0.0.1 # 节点IP
+  channelPort: 20200 # 节点端口
+  certPath: conf  # 证书地址
+  useSMCrypto: false  # 是否使用国密
+```
+
 ### 实体映射
 ```java
 @TableName(name = "tb_config",title = "配置表")
