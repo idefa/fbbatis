@@ -111,7 +111,7 @@ configService.updateByKey(1,null,key,map);
 ```
 
 ### 相关资料
-[智能合约](https://github.com/FISCO-BCOS/FISCO-BCOS-DOC/blob/release-2/2.x/docs/manual/smart_contract.md)
-[FISCO BCOS CRUD使用指南](https://github.com/FISCO-BCOS/FISCO-BCOS-DOC/blob/release-2/2.x/docs/articles/3_features/33_storage/crud_guidance.md)
-[使用预编译合约](https://github.com/FISCO-BCOS/FISCO-BCOS-DOC/blob/release-2/2.x/docs/manual/precompiled_contract.md)
+* [智能合约](https://github.com/FISCO-BCOS/FISCO-BCOS-DOC/blob/release-2/2.x/docs/manual/smart_contract.md)
+* [FISCO BCOS CRUD使用指南](https://github.com/FISCO-BCOS/FISCO-BCOS-DOC/blob/release-2/2.x/docs/articles/3_features/33_storage/crud_guidance.md)
+* [使用预编译合约](https://github.com/FISCO-BCOS/FISCO-BCOS-DOC/blob/release-2/2.x/docs/manual/precompiled_contract.md)
 
