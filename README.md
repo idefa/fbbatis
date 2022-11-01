@@ -65,5 +65,49 @@ public class DataSet<T> {
 }
 ```
 
+## 测试示例
+### DataTable测试示例
+```java
+// 自定义Service
+public class PatientService extends DataTable<Patient> {}
+//初始化表
+paientService.create(1,null);
+//新增
+Patient patient=new Patient();
+//patient.setPhone("")
+paientService.insert(1,null,patient);
+//查询
+QueryWrapper<Patient> patientQuery=new QueryWrapper<Patient>();
+patientQuery.eq("patient_name",name);
+paientService.select(1,patientQuery);
+//删除
+QueryWrapper<Patient> patientQuery=new QueryWrapper<Patient>();
+patientQuery.eq("patient_name",name);
+paientService.remove(1,null,patientQuery);
+//修改
+QueryWrapper<Patient> patientQuery=new QueryWrapper<Patient>();
+patientQuery.eq("patient_name",name);
+JSONObject  jsonObject = JSONObject.parseObject("修改的Json体");
+Map<String,Object> map = (Map<String,Object>)jsonObject;
+paientService.update(1,null,patientQuery,map);
+```
+### DataSet测试示例
+```java
+// 自定义Service
+public class ConfigService extends DataSet<ConfigInfo>{}
+//初始化表
+configService.create(1,null);
+//保存
+ConfigInfo config=new ConfigInfo();
+configService.save(1,null,config);
+//查询
+configService.getByKey(1,key);
+//删除
+configService.removeByKey(1,null,key);
+//更新
+JSONObject jsonObject = JSONObject.parseObject(value);
+Map<String,Object> map = (Map<String,Object>)jsonObject;
+configService.updateByKey(1,null,key,map);
+```
 
 
