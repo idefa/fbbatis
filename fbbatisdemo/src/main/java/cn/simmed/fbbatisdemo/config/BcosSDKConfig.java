@@ -31,7 +31,6 @@ import java.util.Map;
 public class BcosSDKConfig {
     public static String orgName = "fisco";
     public String certPath = "conf";
-    public String useSMCrypto = "false";
     private List<Integer> groupIdList;
     /* use String in java sdk*/
     private String corePoolSize;
@@ -71,7 +70,6 @@ public class BcosSDKConfig {
         Map<String, Object> cryptoMaterial = new HashMap<>();
         // cert use conf
         cryptoMaterial.put("certPath", certPath);
-        cryptoMaterial.put("useSMCrypto", useSMCrypto);
         // user no need set this:cryptoMaterial.put("sslCryptoType", encryptType);
         log.info("init cert cryptoMaterial:{}, (using conf as cert path)", cryptoMaterial);
 
