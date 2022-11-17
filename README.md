@@ -27,7 +27,6 @@ sdk:
   ip: 127.0.0.1 # 节点IP
   channelPort: 20200 # 节点端口
   certPath: conf  # 证书地址
-  useSMCrypto: false  # 是否使用国密
 ```
 
 ### 实体映射
